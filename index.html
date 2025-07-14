@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🎨 DrawEase Pro - Ultimate Paint App</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="toolbar">
+    <label>🎨 Color <input type="color" id="color"></label>
+    <label>✏️ Size <input type="range" id="size" min="1" max="50" value="5"></label>
+    <label>🅰️ Font
+      <select id="fontSelect">
+        <option value="Arial">Arial</option>
+        <option value="Courier New">Courier New</option>
+        <option value="Comic Sans MS">Comic Sans</option>
+        <option value="Georgia">Georgia</option>
+      </select>
+    </label>
+    <input type="file" id="upload" accept="image/*" />
+    <button id="pen">✏️ Pen</button>
+    <button id="eraser">🩹 Eraser</button>
+    <button id="rect">▭ Rect</button>
+    <button id="circle">◯ Circle</button>
+    <button id="textTool">🅰️ Text</button>
+    <button id="fill">🎯 Fill BG</button>
+    <button id="grid">📐 Grid</button>
+    <button id="undo">↩️ Undo</button>
+    <button id="clear">🧹 Clear</button>
+    <button id="save">💾 PNG</button>
+    <button id="download">📥 JPG</button>
+    <button id="toggleTheme">🌗 Theme</button>
+    <span id="position">🖱️ (x: 0, y: 0)</span>
+  </div>
+
+  <canvas id="canvas"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>

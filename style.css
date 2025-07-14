@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f8f8f8;
+  overflow: hidden;
+}
+
+.dark {
+  background: #1e1e1e;
+  color: white;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.dark .toolbar {
+  background: #222;
+  border-color: #444;
+}
+
+canvas {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - 60px);
+  cursor: crosshair;
+  background-color: white;
+}
+
+.dark canvas {
+  background-color: white;
+}
+
+button, select, input[type="range"] {
+  padding: 5px;
+}
